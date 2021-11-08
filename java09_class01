@@ -1,0 +1,34 @@
+package java09;
+
+class CRectangle
+{
+	int width;
+	int height;
+	
+	public CRectangle(int w,int h) {
+		width=w;
+		height=h;
+	}
+	
+	public CRectangle() {
+		// width=10;
+		// height=8;
+		this(10,8);  //呼叫 public CRectangle(int w,int h)
+	}
+}
+
+
+public class java09_class01 {
+	public static void main(String[] args) {
+		CRectangle cr;
+		CRectangle cr2;
+		
+		cr = new CRectangle();
+		System.out.println(cr.width);
+		System.out.println(cr.height);
+
+		cr2 = new CRectangle();
+		System.out.println(cr2.width);
+		System.out.println(cr2.height);
+	}
+}
