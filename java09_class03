@@ -1,0 +1,24 @@
+package java09;
+class Caaa  //(c)不行,
+{
+	public int value;  //(d)可以,不影響
+	
+	public Caaa() {
+		value=10;
+		System.out.println("value="+value);
+	}
+	
+	public Caaa(int i) {
+		value=i;
+		System.out.println("value="+value);
+	}
+}
+public class java09_class03 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Caaa obj1= new Caaa();  //(b)第6行會被呼叫
+		Caaa obj2= new Caaa(12);  //(b)第11行會被呼叫
+	}
+}
+
