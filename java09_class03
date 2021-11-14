@@ -1,9 +1,9 @@
 package java09;
-class Caaa  //(c)不行,
+class Caaa  //(c)不行,不能宣告新的類別
 {
-	public int value;  //(d)可以,不影響
+	public int value;  //(d)可以,不影響,
 	
-	public Caaa() {
+	Caaa() {
 		value=10;
 		System.out.println("value="+value);
 	}
@@ -21,4 +21,5 @@ public class java09_class03 {
 		Caaa obj2= new Caaa(12);  //(b)第11行會被呼叫
 	}
 }
+
 
